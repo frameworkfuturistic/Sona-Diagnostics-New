@@ -1,0 +1,9 @@
+.min-h-screen {
+    min-height: auto !important;
+}
+@media (min-width: 640px)
+{
+    .sm\:ml-6 {
+        margin-left: auto !important;
+    }
+}

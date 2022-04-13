@@ -1,0 +1,31 @@
+Landing Page
+ * Book Investigations
+ * See Lab Reports
+
+Admin Portal
+ * Book Home Collection 
+ * Approve Sample Collection //
+ * Generate Report & Whatsapp & email
+ * View Status of Collection
+ * View Pending Reports
+ * View Completed Reports
+ * Send Whatsapp Messages & Email
+ * Collection Center wise Reports
+ * Print Reports
+ * See Booking Summary
+ * Cancel Booking //
+ * Modify Booking 
+ * Create Collection Center //
+ * View Log
+
+User Portal
+* Book Home Collection
+* Print Reports
+* See Booking Summary
+* Cancel Booking
+* Modify Booking
+* Change Password
+* Daily Log
+
+╣
+
