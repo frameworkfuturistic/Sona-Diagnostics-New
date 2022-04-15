@@ -46,6 +46,8 @@ Route::post('/sendemail/{id}',[AdminController::class,'sendemail']);
 Route::get('add_collection_center',[CollectionCenterController::class,'Index']);
 Route::post('add_CC',[CollectionCenterController::class,'store']);
 
+Route::get('add_admin',[AdminController::class,'add_admin']);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

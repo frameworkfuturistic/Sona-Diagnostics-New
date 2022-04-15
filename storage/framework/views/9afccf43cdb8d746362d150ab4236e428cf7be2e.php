@@ -140,6 +140,16 @@
               <span class="menu-title">View Log</span>
             </a>
           </li>
+          <!-- Add Users -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="add_admin">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Add Admin</span>
+            </a>
+          </li>
+          <!-- Add Users -->
           <li class="nav-item menu-items">
           <form method="POST" action="<?php echo e(route('logout')); ?>">
             <?php echo csrf_field(); ?>

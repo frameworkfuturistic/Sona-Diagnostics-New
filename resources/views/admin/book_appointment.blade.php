@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="text-center">
-                    <button type="submit">Book Test</button>
+                    <button class="btn btn-primary" type="submit">Book Test</button>
                 </div>
             </form>
     </div>

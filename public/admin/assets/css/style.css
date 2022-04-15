@@ -20878,3 +20878,87 @@ div.tagsinput {
   color: #ffffff !important;
 }
 /*# sourceMappingURL=maps/style.css.map */
+
+/* Admin Dashboard Themes changes */
+.navbar {
+  background: white !important;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+  color: #191c24 !important;
+}
+
+.content-wrapper {
+  background: #e1e1e1 !important;
+}
+
+.card .card-title {
+  color: #191c24 !important;
+}
+
+.form-group label {
+  color: #191c24 !important;
+}
+
+.card{
+  background: #fff;
+}
+
+.btn-primary:not(.btn-light):not(.btn-secondary) {
+  color: #26a1eb;
+  font-weight: 900;
+}
+
+li.nav-item.profile {
+  background: #0f1015;
+}
+
+h3.mb-0 {
+  color: black;
+}
+h6.mb-1 {
+  color: black;
+}
+
+h2.mb-0 {
+  color: black;
+}
+
+.footer{
+  background: #fff !important;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.sidebar .nav {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-bottom: 60px;
+  padding-top: 70px;
+  overflow-y: scroll;
+  max-height: 580px;
+}
+
+.sidebar .nav.sub-menu {
+  overflow: hidden;
+}
+/* scrollbar */

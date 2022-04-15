@@ -164,4 +164,10 @@ class AdminController extends Controller
         Notification::send($data,new EmailNotification($details));
         return back()->with('success','Email Successfully sent to the user email!!');
     }
+
+    // add admins
+
+    public function add_admin(){
+        return view('admin.add_admin');
+    }
 }

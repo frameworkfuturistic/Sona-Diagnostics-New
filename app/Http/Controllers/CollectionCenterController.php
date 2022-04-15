@@ -25,6 +25,6 @@ class CollectionCenterController extends Controller
         $user->password=Hash::make($request->password);
         $user->usertype=$request->userType;
         $user->save();
-        return back()->with('success','Successfully added the collection center');
+        return back()->with('success','Successfully added the data');
     }
 }
