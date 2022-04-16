@@ -52,7 +52,32 @@
 <script src="admin/assets/js/dataTables.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#dataTable').DataTable();
+        $('#dataTable').DataTable({
+            "columns": [
+
+                    {
+                        "data": "cabcircle"
+                    },
+                    {
+                        "data": "cab"
+                    },
+                    {
+                        "data": "address"
+                    },
+                    {
+                        "data": "mobile"
+                    },
+                    {
+                        title:"Action", "data":"id" , "render" : function (data) {
+                        return "<button class='btn btn-success btn-sm' data-toggle='modal' data-target='#edit' data-myid=" + data + "><i class='fa fa-edit'>Edit</i></button>";
+                        },
+                        "orderable": false,
+                        "searchable":false,
+                        "width":"50px"
+                    }
+
+                    ]
+        });
     } );
 </script>
 @endsection
