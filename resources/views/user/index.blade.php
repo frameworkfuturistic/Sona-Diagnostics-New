@@ -270,7 +270,7 @@
     <!-- End Counts Section -->
 
     <!-- ======= Features Section ======= -->
-    <!-- <section id="features" class="features">
+    <section id="features" class="features">
         <div class="container" data-aos="fade-up">
 
             <div class="row">
@@ -301,11 +301,11 @@
             </div>
 
         </div>
-    </section> -->
+    </section>
     <!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services services">
+    <section id="services" class="services services">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -355,13 +355,13 @@
             </div>
 
         </div>
-    </section> -->
+    </section>
     <!-- End Services Section -->
 
 
 
     <!-- ======= Departments Section ======= -->
-    <!-- <section id="departments" class="departments">
+    <section id="departments" class="departments">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -447,11 +447,11 @@
             </div>
 
         </div>
-    </section> -->
+    </section>
     <!-- End Departments Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -549,7 +549,7 @@
             </div>
 
         </div>
-    </section>  -->
+    </section> 
     <!-- End Testimonials Section -->
 
     <!-- ======= Doctors Section ======= -->
