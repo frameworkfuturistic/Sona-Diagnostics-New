@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <!-- <link href="website/assets/img/favicon.png" rel="icon">
-    <link href="website/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+    <link href="website/assets/img/favicon.png" rel="icon">
+    <link href="website/assets/img/favicon.png" rel="icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -42,10 +42,10 @@
     <div id="topbar" class="d-flex align-items-center fixed-top">
         <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
             <div class="align-items-center d-none d-md-flex">
-                <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
+                <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 7PM
             </div>
             <div class="d-flex align-items-center">
-                <i class="bi bi-phone"></i> Call us now +1 5589 55488 55
+                <i class="bi bi-phone"></i> Call us now &nbsp;<a href="tel:+918294566811" class="callNow">+91 8294566811</a>
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <a href="/" class="logo me-auto"><img src="website/assets/img/logo.png" alt=""></a>
+            <a href="/" class="logo me-auto"><img src="website/assets/img/logo1.png" alt=""></a>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
@@ -64,6 +64,7 @@
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
+                    <li><a class="nav-link scrollto" href="/packages">Packages</a></li>
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
@@ -128,10 +129,10 @@
                         <div class="footer-info">
                             <h3>Sona Diagnostics</h3>
                             <p>
-                                A108 Adam Street <br>
-                                NY 535022, USA<br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                Khushwaha Complex, near life care hospital <br>
+                                Booty More Bariyatu Road, Ranchi<br><br>
+                                <strong>Phone:</strong> <a href="tel:+918294566811">+91 8294566811</a><br>
+                                <strong>Email:</strong> <a href="mailto:sonadiagnosticsranchi@gmail.com">sonadiagnosticsranchi@gmail.com</a><br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -157,17 +158,17 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">WHOLE BODY CT SCAN</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">DIGITAL X-RAY</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">OPG</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">ULTRA SONOGRAPHY</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">EEG</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <p>Enter your email to subscribe to our newsletter</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -183,7 +184,7 @@
                 &copy; Copyright <strong><span>Sona Diagnostics</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                Designed by <a href="">Framework Futuristic Pvt. Ltd.</a>
+                Designed by <a target="_blank" href="http://framework-futuristic.com/">Framework Futuristic Pvt. Ltd.</a>
             </div>
         </div>
     </footer><!-- End Footer -->

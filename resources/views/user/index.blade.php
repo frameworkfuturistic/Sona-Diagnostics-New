@@ -85,13 +85,14 @@
                     </div>
                 </div>
                 <div class="row">
-                
+
                     <div class="col-md-12 form-group mt-3">
                         <label for="testGroup">Select Test Group</label>
                         <select name="testGroup[]" id="testGroup" class="form-select select2" multiple="multiple">
                             <option value="" disabled>Select Test Group</option>
                             @foreach($testGroups as $testGroup)
-                            <option value="{{$testGroup->GroupName}}">{{$testGroup->GroupName}} ({{$testGroup->Charge}} ₹)</option>
+                            <option value="{{$testGroup->GroupName}}">{{$testGroup->GroupName}} ({{$testGroup->Charge}}
+                                ₹)</option>
                             @endforeach
                         </select>
                     </div>
@@ -181,7 +182,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Welcome to Sona Diagnistics Center</h2>
+                <h2>Welcome to Sona Diagnostics</h2>
                 <p>Sona Diagnostics offers a wide array of screening preventive tests and health checkup packages
                     enabling timely and early diagnosis of a disease which in turn serves the medical fraternity to
                     accurately identify and treat the disease effectively and also aid prognosis of a disease under
@@ -228,7 +229,7 @@
                         <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
                             class="purecounter"></span>
 
-                        <p><strong>Doctors</strong> consequuntur quae qui deca rode</p>
+                        <p><strong>Doctors</strong></p>
                         <a href="#">Find out more &raquo;</a>
                     </div>
                 </div>
@@ -238,7 +239,7 @@
                         <i class="far fa-hospital"></i>
                         <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p><strong>Departments</strong> adipisci atque cum quia aut numquam delectus</p>
+                        <p><strong>Departments</strong></p>
                         <a href="#">Find out more &raquo;</a>
                     </div>
                 </div>
@@ -248,7 +249,7 @@
                         <i class="fas fa-flask"></i>
                         <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p><strong>Research Lab</strong> aut commodi quaerat. Aliquam ratione</p>
+                        <p><strong>Research Lab</strong></p>
                         <a href="#">Find out more &raquo;</a>
                     </div>
                 </div>
@@ -258,7 +259,7 @@
                         <i class="fas fa-award"></i>
                         <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p><strong>Awards</strong> rerum asperiores dolor molestiae doloribu</p>
+                        <p><strong>Awards</strong></p>
                         <a href="#">Find out more &raquo;</a>
                     </div>
                 </div>
@@ -276,24 +277,42 @@
             <div class="row">
                 <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
                     <div class="icon-box mt-5 mt-lg-0">
-                        <i class="bx bx-receipt"></i>
-                        <h4>Est labore ad</h4>
-                        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        <i class="fas fa-child"></i>
+                        <h4>Full Body Health Checkup Packages</h4>
+                        <p>Reasons why full body health check-up is mandatorily essential..</p>
+                        <p>
+                            <button class="btn btn-primary btn-sm"><span class="fa fa-eye"></span> View Package</button>
+                            <button class="btn btn-success btn-sm"><span class="fa fa-money-bill"></span> Rs. 399/-</button>
+                        </p>
                     </div>
-                    <div class="icon-box mt-5">
-                        <i class="bx bx-cube-alt"></i>
-                        <h4>Harum esse qui</h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <div class="icon-box mt-1">
+                        <i class="fa fa-solid fa-viruses"></i>
+                        <h4>Post Covid Health Checkup Packages</h4>
+                        <p>
+                            It has been observed that even after the SARS-COV-2 is defeated by the immune system, it...
+                        </p>
+                        <p>
+                            <button class="btn btn-primary btn-sm"><span class="fa fa-eye"></span> View Package</button>
+                            <button class="btn btn-success btn-sm"><span class="fa fa-money-bill"></span> Rs. 999/-</button>
+                        </p>
                     </div>
-                    <div class="icon-box mt-5">
-                        <i class="bx bx-images"></i>
-                        <h4>Aut occaecati</h4>
-                        <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <div class="icon-box mt-1">
+                        <i class="fa fa-solid fa-virus"></i>
+                        <h4>Covid Antibody Test Packages</h4>
+                        <p>COVID-19 Antibody IgM, COVID-19 Antibody IgG, Covid Antibody IgG - Quantitative</p>
+                        <p>
+                            <button class="btn btn-primary btn-sm"><span class="fa fa-eye"></span> View Package</button>
+                            <button class="btn btn-success btn-sm"><span class="fa fa-money-bill"></span> Rs. 300/-</button>
+                        </p>
                     </div>
-                    <div class="icon-box mt-5">
-                        <i class="bx bx-shield"></i>
-                        <h4>Beatae veritatis</h4>
-                        <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                    <div class="icon-box mt-1">
+                        <i class="fa fa-solid fa-book-medical"></i>
+                        <h4>Senior Citizen Health Checkup</h4>
+                        <p>Senior citizen health checkup is a matter that should not be overlooked...</p>
+                        <p>
+                            <button class="btn btn-primary btn-sm"><span class="fa fa-eye"></span> View Package</button>
+                            <button class="btn btn-success btn-sm"><span class="fa fa-money-bill"></span> Rs. 1149/-</button>
+                        </p>
                     </div>
                 </div>
                 <div class="image col-lg-6 order-1 order-lg-2"
@@ -310,47 +329,50 @@
 
             <div class="section-title">
                 <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>Diagnostic Services facilitates the provision of timely, cost-effective, and high quality diagnostic
+                    care in safe and secure environments. It includes the clinical services of Pathology and Laboratory
+                    Medicine, Radiology, and Nuclear Medicine.</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                        excepturi sint occaecati cupiditate non provident</p>
+                    <div class="icon"><i class="fas fa-child"></i></div>
+                    <h4 class="title"><a href="">WHOLE BODY CT SCAN</a></h4>
+                    <p class="description">A computerized tomography (CT) scan combines a series of X-ray images taken
+                        from different angles around your body</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon"><i class="fas fa-pills"></i></div>
-                    <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat tarad limino ata</p>
+                    <div class="icon"><i class="fas fa-x-ray fa-fw"></i></div>
+                    <h4 class="title"><a href="">DIGITAL X-RAY</a></h4>
+                    <p class="description">An X-ray, or, much less commonly, X-radiation, is a penetrating form of
+                        high-energy electromagnetic radiation.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur</p>
+                    <div class="icon"><i class="fas fa-teeth"></i></div>
+                    <h4 class="title"><a href="">OPG</a></h4>
+                    <p class="description">An OPG (Orthopantomagram) is a panoramic scanning dental X-ray of the upper
+                        and lower jaw.
+
+                    </p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon"><i class="fas fa-dna"></i></div>
-                    <h4 class="title"><a href="">Magni Dolores</a></h4>
-                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum</p>
+                    <h4 class="title"><a href="">ULTRA SONOGRAPHY</a></h4>
+                    <p class="description">(UL-truh-soh-NAH-gruh-fee) A procedure that uses high-energy sound waves to
+                        look at tissues and organs inside the body.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon"><i class="fas fa-wheelchair"></i></div>
-                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum deleniti atque</p>
+                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4 class="title"><a href="">ECHO CARDIOGRAPHY</a></h4>
+                    <p class="description">An echocardiography, echocardiogram, cardiac echo or simply an echo, is an
+                        ultrasound of the heart. It is a type of medical imaging of the heart, using standard ultrasound
+                        or Doppler ultrasound.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon"><i class="fas fa-notes-medical"></i></div>
-                    <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                    <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                        tempore, cum soluta nobis est eligendi</p>
+                    <h4 class="title"><a href="">EEG</a></h4>
+                    <p class="description">An echocardiography, echocardiogram, cardiac echo or simply an echo, is an
+                        ultrasound of the heart. It is a type of medical imaging of the heart</p>
                 </div>
             </div>
 
@@ -366,9 +388,6 @@
 
             <div class="section-title">
                 <h2>Departments</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -376,26 +395,27 @@
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
                             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                                <h4>Cardiology</h4>
-                                <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+                                <h4>Histopathology</h4>
+                                <p>Histology is the study of tissues, and pathology is the study of disease</p>
                             </a>
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                                <h4>Neurology</h4>
-                                <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                                <h4>Cytopathology</h4>
+                                <p>Cytology is a common method for determining a diagnosis in the medical world</p>
                             </a>
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                                <h4>Hepatology</h4>
-                                <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+                                <h4>Molecular Diagnostics</h4>
+                                <p>Cellular–Molecular diagnostics” is a broad term describing a class of diagnostic
+                                    tests</p>
                             </a>
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                                <h4>Pediatrics</h4>
-                                <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                                <h4>Hematology & Immunology</h4>
+                                <p>Immunohematology is a branch of hematology and transfusion medicine</p>
                             </a>
                         </li>
                     </ul>
@@ -403,44 +423,61 @@
                 <div class="col-lg-8">
                     <div class="tab-content">
                         <div class="tab-pane active show" id="tab-1">
-                            <h3>Cardiology</h3>
-                            <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde
-                                sonata raqer a videna mareta paulona marka</p>
-                            <img src="website/assets/img/departments-1.jpg" alt="" class="img-fluid">
-                            <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
-                                ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
-                                eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
-                                accusamus nostrum rem vero</p>
+                            <h3>Histopathology</h3>
+                            <p class="fst-italic">Histology is the study of tissues, and pathology is the study of
+                                disease. Histopathology means the study of tissues related to disease.</p>
+                            <img src="website/assets/img/departments/hispathology1.jpg" alt="" class="img-fluid">
+                            <p>A histopathology report describes the tissue that the pathologist examined. It can
+                                identify features of what cancer looks like under the microscope. A histopathology
+                                report is also sometimes called a biopsy report or a pathology report.</p>
+                            <p>Histopathological examination of tissues starts with surgery, biopsy, or autopsy. The
+                                tissue is removed from the body or plant, and then, often following expert dissection in
+                                the fresh state, placed in a fixative which stabilizes the tissues to prevent decay. The
+                                most common fixative is formalin.</p>
                         </div>
                         <div class="tab-pane" id="tab-2">
-                            <h3>Neurology</h3>
-                            <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde
-                                sonata raqer a videna mareta paulona marka</p>
-                            <img src="website/assets/img/departments-2.jpg" alt="" class="img-fluid">
-                            <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
-                                ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
-                                eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
-                                accusamus nostrum rem vero</p>
+                            <h3>Cytopathology</h3>
+                            <p class="fst-italic">Cytology is a common method for determining a diagnosis in the medical
+                                world.</p>
+                            <img src="website/assets/img/departments/cytopathology1.jpg" alt="" class="img-fluid">
+                            <p>Cytology tests use small amounts of bodily tissue or fluid in order to examine certain
+                                types of cells. Healthcare providers can use cytology tests for almost all areas of your
+                                body.</p>
+                            <p>Cytology (also known as Cytopathology) involves examining cells from bodily tissues or
+                                fluids to determine a diagnosis. A certain kind of scientist called a pathologist will
+                                look at the cells in the tissue sample under a microscope and look for characteristics
+                                or abnormalities in the cells.</p>
                         </div>
                         <div class="tab-pane" id="tab-3">
-                            <h3>Hepatology</h3>
-                            <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde
-                                sonata raqer a videna mareta paulona marka</p>
-                            <img src="website/assets/img/departments-3.jpg" alt="" class="img-fluid">
-                            <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
-                                ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
-                                eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
-                                accusamus nostrum rem vero</p>
+                            <h3>Molecular Diagnostics</h3>
+                            <img src="website/assets/img/departments/molecularDiagnostics1.jpg" alt=""
+                                class="img-fluid">
+                            <p>“Cellular–Molecular diagnostics” is a broad term describing a class of diagnostic tests
+                                that assess a person’s health literally at a cellular and molecular level, detecting and
+                                measuring specific cellular alterations, genetic sequences in deoxyribonucleic acid
+                                (DNA) or ribonucleic acid (RNA) or amino acids or the proteins they express..</p>
+                            <p>Molecular tests to detect viruses use the polymerase chain reaction (PCR) and other
+                                comparable nucleic acid amplification methods. FDA-cleared multiplex tests have become
+                                available for the diagnosis of respiratory, gastrointestinal, and central nervous system
+                                (CNS) infections. Some of these tests detect 20 or more different agents at the same
+                                time and may require only about 65 min to perform.</p>
                         </div>
                         <div class="tab-pane" id="tab-4">
-                            <h3>Pediatrics</h3>
-                            <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde
-                                sonata raqer a videna mareta paulona marka</p>
-                            <img src="website/assets/img/departments-4.jpg" alt="" class="img-fluid">
-                            <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
-                                ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
-                                eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
-                                accusamus nostrum rem vero</p>
+                            <h3>Hematology & Immunology</h3>
+                            <p class="fst-italic">Immunohematology is a branch of hematology and transfusion medicine
+                                which studies antigen-antibody reactions and analogous phenomena as they relate to the
+                                pathogenesis and clinical manifestations of blood disorders.</p>
+                            <img src="website/assets/img/departments/hematologyImmunology1.jpg" alt=""
+                                class="img-fluid">
+                            <p>A person employed in this field is referred to as an immunohematologist. Their day-to-day
+                                duties include blood typing, cross-matching and antibody identification.</p>
+                            <p>Immunohematology and Transfusion Medicine is a medical post graduate specialty in many
+                                countries. The specialist Immunohematology and Transfusion Physician provides expert
+                                opinion for difficult transfusions, massive transfusions, incompatibility work up,
+                                therapeutic plasmapheresis, cellular therapy, irradiated blood therapy, leukoreduced and
+                                washed blood products, stem cell procedures, platelet rich plasma therapies, HLA and
+                                cord blood banking. Other research avenues are in the field of stem cell researches,
+                                regenerative medicine and cellular therapy.[</p>
                         </div>
                     </div>
                 </div>
@@ -456,9 +493,6 @@
 
             <div class="section-title">
                 <h2>Testimonials</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
 
             <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -468,14 +502,13 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                risus at semper.
+                                NABL approved lab with RTPCR test.
+                                My sample collected in mrng and phlebotomist was well dressed collected sample in gud manner and by the evening I recieved my report this service is the future on Sona Diagnostics
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
-                            <img src="website/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                            <img src="website/assets/img/testimonials/male.jpg" class="testimonial-img"
                                 alt="">
-                            <h3>Saul Goodman</h3>
+                            <h3>Ravi Kumar</h3>
                             <h4>Ceo &amp; Founder</h4>
                         </div>
                     </div>
@@ -484,14 +517,12 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                                legam anim culpa.
+                                I recieved a call from dr and she provided a perfect solution and also suggested some supplement which is gud fr health seeing many improvement after taking supplements
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
-                            <img src="website/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
+                            <img src="website/assets/img/testimonials/female.jpg" class="testimonial-img"
                                 alt="">
-                            <h3>Sara Wilsson</h3>
+                            <h3>Hemant Agarwal</h3>
                             <h4>Designer</h4>
                         </div>
                     </div>
@@ -500,14 +531,12 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
-                                minim.
+                                I am very much satisfied with services . Done tests of my family and friends during covid and find the support and great service during this period.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
-                            <img src="website/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
+                            <img src="website/assets/img/testimonials/female.jpg" class="testimonial-img"
                                 alt="">
-                            <h3>Jena Karlis</h3>
+                            <h3>Sanchita</h3>
                             <h4>Store Owner</h4>
                         </div>
                     </div>
@@ -516,14 +545,12 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
-                                dolore labore illum veniam.
+                                Good!! I have conducted blood test for my family and we all get the report on time do I will recommend to everyone to use Sona Diagnostics service.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
-                            <img src="website/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
+                            <img src="website/assets/img/testimonials/female.jpg" class="testimonial-img"
                                 alt="">
-                            <h3>Matt Brandon</h3>
+                            <h3>Ujjeal</h3>
                             <h4>Freelancer</h4>
                         </div>
                     </div>
@@ -532,14 +559,12 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                culpa fore nisi cillum quid.
+                                Excellent!! One of the best diagnostics centers in Jharkhand for blood tests and covid tests very friendly in staff.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
-                            <img src="website/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
+                            <img src="website/assets/img/testimonials/male.jpg" class="testimonial-img"
                                 alt="">
-                            <h3>John Larson</h3>
+                            <h3>KRISHNA KUMAR</h3>
                             <h4>Entrepreneur</h4>
                         </div>
                     </div>
@@ -549,11 +574,11 @@
             </div>
 
         </div>
-    </section> 
+    </section>
     <!-- End Testimonials Section -->
 
     <!-- ======= Doctors Section ======= -->
-    
+
     <!-- End Doctors Section -->
 
     <!-- ======= Gallery Section ======= -->
@@ -570,29 +595,15 @@
             <div class="gallery-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                     <div class="swiper-slide"><a class="gallery-lightbox"
-                            href="website/assets/img/gallery/gallery-1.jpg"><img
-                                src="website/assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a class="gallery-lightbox"
                             href="website/assets/img/gallery/gallery-2.jpg"><img
                                 src="website/assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
                     <div class="swiper-slide"><a class="gallery-lightbox"
                             href="website/assets/img/gallery/gallery-3.jpg"><img
                                 src="website/assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a class="gallery-lightbox"
-                            href="website/assets/img/gallery/gallery-4.jpg"><img
-                                src="website/assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a class="gallery-lightbox"
-                            href="website/assets/img/gallery/gallery-5.jpg"><img
-                                src="website/assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a class="gallery-lightbox"
-                            href="website/assets/img/gallery/gallery-6.jpg"><img
-                                src="website/assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+                    
                     <div class="swiper-slide"><a class="gallery-lightbox"
                             href="website/assets/img/gallery/gallery-7.jpg"><img
                                 src="website/assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a class="gallery-lightbox"
-                            href="website/assets/img/gallery/gallery-8.jpg"><img
-                                src="website/assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -799,16 +810,13 @@
 
             <div class="section-title">
                 <h2>Contact</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
 
         </div>
 
         <div>
             <iframe style="border:0; width: 100%; height: 350px;"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58592.787898757786!2d85.30812914585317!3d23.386435750990415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e391af0b26e7%3A0x7738cb050445bc43!2sSona%20Diagnostics!5e0!3m2!1sen!2sin!4v1650868649161!5m2!1sen!2sin"
                 frameborder="0" allowfullscreen></iframe>
         </div>
 
@@ -823,21 +831,30 @@
                             <div class="info-box">
                                 <i class="bx bx-map"></i>
                                 <h3>Our Address</h3>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <p>
+                                    <a target="_blank"
+                                        href="https://www.google.com/maps?ll=23.395512,85.382777&z=12&t=m&hl=en&gl=IN&mapclient=embed&cid=8590839511616175171">
+                                        Khushwaha Complex, near life care hospital Booty More Bariyatu Road, Ranchi
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="info-box mt-4">
                                 <i class="bx bx-envelope"></i>
                                 <h3>Email Us</h3>
-                                <p>info@example.com<br>contact@example.com</p>
+                                <p>
+                                    <a href="mailto:sonadiagnosticsranchi@gmail.com">sonadiagnosticsranchi@gmail.com</a>
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="info-box mt-4">
                                 <i class="bx bx-phone-call"></i>
                                 <h3>Call Us</h3>
-                                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                                <p>
+                                    <a href="tel:+918294566811">+91 8294566811</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -851,7 +868,7 @@
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
                                     required>
                             </div>
-                            <div class="col form-group mt-3">
+                            <div class="col form-group">
                                 <input type="email" class="form-control" name="email" id="email"
                                     placeholder="Your Email" required>
                             </div>
@@ -876,7 +893,9 @@
             </div>
 
         </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
-</main><!-- End #main -->
+</main>
+<!-- End #main -->
 @endsection

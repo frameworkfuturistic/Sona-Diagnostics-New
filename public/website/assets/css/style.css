@@ -1659,7 +1659,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-    background: #65c9cd;
+    background: #c03f3f;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1837,4 +1837,21 @@ section#my_appointment {
 
 button.inline-flex.items-center.px-3.py-2.border.border-transparent.text-sm.leading-4.font-medium.rounded-md.text-gray-500.bg-white.hover\:text-gray-700.focus\:outline-none.transition {
     color: #c30000;
+}
+
+.callNow{
+    color: white;
+}
+
+.callNow:hover{
+    color: rgb(255, 168, 168);
+}
+
+.icon-box{
+    box-shadow: -10px -5px 40px 0 rgb(0 0 0 / 10%);
+    padding: 10px;
+}
+
+.mt-1{
+    margin-top:10px !important;
 }
