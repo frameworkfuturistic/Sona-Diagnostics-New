@@ -19,11 +19,11 @@
             @csrf 
             <div class="form-group">
                 <label for="exampleInputName1">Name</label>
-                <input type="text" class="form-control1" id="name" name="name" placeholder="Collection Center Name" required>
+                <input type="text" class="form-control1" id="name" name="name" placeholder="Name" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputName1">Email</label>
-                <input type="text" class="form-control1" id="email" name="email" placeholder="Collection Center Email" required>
+                <input type="text" class="form-control1" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputName1">Phone</label>
