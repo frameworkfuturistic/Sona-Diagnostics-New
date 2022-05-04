@@ -106,47 +106,10 @@ class AdminController extends Controller
     public function book_appointment(){
         $doctor=AddDoctors::all();
         $testGroup=TestGroup::select('GroupName','Charge')->get();
-        return view('admin.book_appointment',['doctors'=>$doctor],['testGroups'=>$testGroup]);
+        return view('admin.appointments.book_appointment',['doctors'=>$doctor],['testGroups'=>$testGroup]);
     }
 
-    public function approve_appointment(){
-        $appointment=appointment::where('status','=','in progress !!')
-                                  ->get();
-        return view('admin.view_appointment',['appointments'=>$appointment]);
-    }
-
-    public function approved_appointment(){
-        $appointment=appointment::where('status','=','Approved !!')
-                                  ->get();
-        return view('admin.approved_appointment',['appointments'=>$appointment]);
-    }
-
-    public function approve_patient(Request $request,$id){
-        $appointment=appointment::find($id);
-        $appointment->status='Approved !!';
-        $appointment->save();
-        return back();
-    }
-
-    public function complete_patient(Request $request,$id){
-        $appointment=appointment::find($id);
-        $appointment->status='Completed !!';
-        $appointment->save();
-        return back();
-    }
-
-    public function completed_patient(){
-        $appointment=appointment::where('status','=','Completed !!')
-                                  ->get();
-        return view('admin.completed_appointment',['appointments'=>$appointment]);
-    }
-
-    public function cancel_patient(Request $request,$id){
-        $appointment=appointment::find($id);
-        $appointment->status='Cancelled !!';
-        $appointment->save();
-        return back();
-    }
+    
     public function mail_patient($id){
         $appointment=appointment::find($id);
         return view('admin.mail_patient',['appointments'=>$appointment]);

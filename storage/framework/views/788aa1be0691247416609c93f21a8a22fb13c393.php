@@ -86,18 +86,21 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-md-12 form-group mt-3">
-                        <label for="testGroup">Select Test Group</label>
+                    <div class="col-md-10 form-group mt-3">
+                        <label for="testGroup">Select Test Group <span class="note">(*To deselect the Test Group Reselect the Selected Test Group)</span></label>
                         <select name="testGroup[]" id="testGroup" class="form-select select2" multiple="multiple">
                             <option value="" disabled>Select Test Group</option>
                             <?php $__currentLoopData = $testGroups; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $testGroup): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                            <option value="<?php echo e($testGroup->GroupName); ?>"><?php echo e($testGroup->GroupName); ?> (<?php echo e($testGroup->Charge); ?>
+                            <option data-price="<?php echo e($testGroup->Charge); ?>" value="<?php echo e($testGroup->GroupName); ?>"><?php echo e($testGroup->GroupName); ?> (<?php echo e($testGroup->Charge); ?>
 
                                 ₹)</option>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </select>
                     </div>
-
+                    <div class="col-md-2 form-group mt-3">
+                        <label for="Total Price">Total</label>
+                        <input class="form-control" type="text" id="opt_price" value="0" readonly/>
+                    </div>
                 </div>
 
                 <div class="form-group mt-3">
@@ -901,4 +904,26 @@
 <!-- End #main -->
 <?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('page-script'); ?>
+<script>
+$(document).ready(function() {
+    $('#testGroup').on('change', function() {
+    $('#opt_price').val(valueFunction());
+  });
+});
+
+function valueFunction(quan){
+    var $selection = $('#testGroup').find(':selected');
+    // var total=0;
+    var total=document.getElementById("opt_price").value;
+    var grandTotal=0;
+    $selection.each(function(){
+        var price=$(this).data('price');
+        grandTotal=(-total-price);
+    })
+    return (-grandTotal);
+}
+
+</script>
+<?php $__env->stopSection(); ?>
 <?php echo $__env->make('user.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\laragon\www\HMS\resources\views/user/index.blade.php ENDPATH**/ ?>

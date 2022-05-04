@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="admin/assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/owl-carousel-2/owl.carousel.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link href="website/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -130,16 +131,23 @@
               <span class="menu-title">View Log</span>
             </a>
           </li>
-          <!-- Add Users -->
+          <!-- Admin Console -->
           <li class="nav-item menu-items">
-            <a class="nav-link" href="add_admin">
+            <a class="nav-link" data-bs-toggle="collapse" href="#admin-console" aria-expanded="false" aria-controls="admin-console">
               <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
+                <i class="mdi mdi-laptop"></i>
               </span>
-              <span class="menu-title">Add Admin</span>
+              <span class="menu-title">Admin Console</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="admin-console">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ url('add_admin') }}">Add Admin</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('showTestGroup') }}">Test Group Prices</a></li>
+              </ul>
+            </div>
           </li>
-          <!-- Add Users -->
+          <!-- Admin Console -->
           <li class="nav-item menu-items">
           <form method="POST" action="{{route('logout')}}">
             @csrf
@@ -275,8 +283,6 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <!-- <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span> -->
             </div>
           </footer>
           <!-- partial -->
@@ -306,6 +312,7 @@
     <!-- endinject -->
     <!-- Custom js for this page -->
     <script src="admin/assets/js/dashboard.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- End custom js for this page -->
     <script>
         $(".close").click(function(){

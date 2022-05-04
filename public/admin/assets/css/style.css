@@ -20962,3 +20962,15 @@ h2.mb-0 {
   overflow: hidden;
 }
 /* scrollbar */
+
+.dataTables_wrapper .dataTables_filter input {
+  color: black !important;
+}
+
+.modal-content{
+  background:#B22727 !important;
+}
+
+.modal-body{
+  background:white !important;
+}
