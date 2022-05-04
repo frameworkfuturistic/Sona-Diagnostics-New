@@ -99,7 +99,7 @@
                     </div>
                     <div class="col-md-2 form-group mt-3">
                         <label for="Total Price">Total</label>
-                        <input class="form-control" type="text" id="opt_price" value="0" readonly/>
+                        <input class="form-control" type="text" name="opt_price" id="opt_price" value="0" readonly/>
                     </div>
                 </div>
 

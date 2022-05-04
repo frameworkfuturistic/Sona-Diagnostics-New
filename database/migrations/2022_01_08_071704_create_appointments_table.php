@@ -19,6 +19,7 @@ class CreateAppointmentsTable extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('testGroup')->nullable();
+            $table->string('totalPrice')->nullable();
             $table->string('date')->nullable();
             $table->string('message')->nullable();
             $table->string('status')->nullable();

@@ -21,6 +21,7 @@
                         <th>Email</th>
                         <th>Phone</th>
                         <th>TestGroup</th>
+                        <th>Price</th>
                         <th>Date</th>
                     </tr>
                 </thead>
@@ -91,6 +92,9 @@
                 },
                 {
                     "data":"testGroup"
+                },
+                {
+                    "data":"totalPrice"
                 },
                 {
                     "data":"date"

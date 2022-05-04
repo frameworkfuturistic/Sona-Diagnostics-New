@@ -90,6 +90,7 @@ class AdminController extends Controller
             $appointment->message=$request->message;
             $appointment->status="in progress !!";
             $appointment->testGroup=json_encode($request->testGroup);
+            $appointment->totalPrice=$request->opt_price;
             if(Auth::id()){
                 $appointment->user_id=Auth::user()->id;
             }

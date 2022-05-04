@@ -45,14 +45,18 @@
                 </div>
                 <div class="row">
                 
-                    <div class="col-md-12 form-group mt-3">
+                    <div class="col-md-10 form-group mt-3">
                         <label for="testGroup">Select Test Group</label>
                         <select name="testGroup[]" id="testGroup" class="form-select form-control1 js-example-basic-multiple" multiple="multiple">
                             <option value="" disabled>Select Test Group</option>
                             @foreach($testGroups as $testGroup)
-                            <option value="{{$testGroup->GroupName}}">{{$testGroup->GroupName}} ({{$testGroup->Charge}} ₹)</option>
+                            <option data-price="{{$testGroup->Charge}}" value="{{$testGroup->GroupName}}">{{$testGroup->GroupName}} ({{$testGroup->Charge}} ₹)</option>
                             @endforeach
                         </select>
+                    </div>
+                    <div class="col-md-2 form-group mt-3">
+                        <label for="Total Price">Total</label>
+                        <input class="form-control" type="text" name="opt_price" id="opt_price" value="0" readonly style="color:black;"/>
                     </div>
 
                 </div>
@@ -73,4 +77,24 @@
 @section('script')
 <script src="admin/assets/vendors/select2/select2.min.js"></script>
 <script src="admin/assets/js/select2.js"></script>
+
+<script>
+    $(document).ready(function() {
+    $('#testGroup').on('change', function() {
+    $('#opt_price').val(valueFunction());
+  });
+});
+
+function valueFunction(quan){
+    var $selection = $('#testGroup').find(':selected');
+    // var total=0;
+    var total=document.getElementById("opt_price").value;
+    var grandTotal=0;
+    $selection.each(function(){
+        var price=$(this).data('price');
+        grandTotal=(-total-price);
+    })
+    return (-grandTotal);
+}
+</script>
 @endsection

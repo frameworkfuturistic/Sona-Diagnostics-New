@@ -98,7 +98,7 @@
                     </div>
                     <div class="col-md-2 form-group mt-3">
                         <label for="Total Price">Total</label>
-                        <input class="form-control" type="text" id="opt_price" value="0" readonly/>
+                        <input class="form-control" type="text" name="opt_price" id="opt_price" value="0" readonly/>
                     </div>
                 </div>
 
@@ -106,11 +106,6 @@
                     <textarea class="form-control" name="message" id="message" rows="5"
                         placeholder="Message (Optional)"></textarea>
                 </div>
-                <!-- <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-                    </div> -->
                 <div class="text-center">
                     <button type="submit">Book Test</button>
                 </div>
