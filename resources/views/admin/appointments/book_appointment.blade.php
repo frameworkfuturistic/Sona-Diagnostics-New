@@ -45,7 +45,7 @@
                 </div>
                 <div class="row">
                 
-                    <div class="col-md-10 form-group mt-3">
+                    <div class="col-md-10 form-group">
                         <label for="testGroup">Select Test Group</label>
                         <select name="testGroup[]" id="testGroup" class="form-select form-control1 js-example-basic-multiple" multiple="multiple">
                             <option value="" disabled>Select Test Group</option>
@@ -54,7 +54,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <div class="col-md-2 form-group mt-3">
+                    <div class="col-md-2 form-group">
                         <label for="Total Price">Total</label>
                         <input class="form-control" type="text" name="opt_price" id="opt_price" value="0" readonly style="color:black;"/>
                     </div>

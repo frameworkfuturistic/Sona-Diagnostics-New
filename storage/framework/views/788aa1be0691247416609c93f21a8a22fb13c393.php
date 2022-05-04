@@ -107,11 +107,6 @@
                     <textarea class="form-control" name="message" id="message" rows="5"
                         placeholder="Message (Optional)"></textarea>
                 </div>
-                <!-- <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-                    </div> -->
                 <div class="text-center">
                     <button type="submit">Book Test</button>
                 </div>
