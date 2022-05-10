@@ -87,14 +87,14 @@
 
 function valueFunction(quan){
     var $selection = $('#testGroup').find(':selected');
-    // var total=0;
-    var total=document.getElementById("opt_price").value;
     var grandTotal=0;
+    var price=0;
+    var price1;
     $selection.each(function(){
-        var price=$(this).data('price');
-        grandTotal=(-total-price);
-    })
-    return (-grandTotal);
+        price1=$(this).data('price');
+        price=price-price1;
+    });
+    return -price;
 }
 </script>
 @endsection

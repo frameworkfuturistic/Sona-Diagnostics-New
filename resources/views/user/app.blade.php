@@ -6,8 +6,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Sona Diagnostics - Index</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="A leading blood test laboratory of Ranchi, Jharkhand Sona Diagnostics now makes it easy and convenient for patients to check their lab test results online with just a couple of clicks." name="description">
+    <meta content="sona diagnostics, pathology lab, diagnostics center, blood test, diagnostics center india, path lab, diagnostics services, pathology services, pathology service Ranchi" name="keywords">
 
     <!-- Favicons -->
     <link href="website/assets/img/favicon.png" rel="icon">
@@ -60,10 +60,10 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto " href="/#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="/#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
+                    <li><a class="nav-link scrollto" href="/#departments">Departments</a></li>
                     <li><a class="nav-link scrollto" href="/packages">Packages</a></li>
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -83,7 +83,7 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li> -->
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
